@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About - Emelika Safaris</title>
+<style>
+        * {
+            box-sizing: border-box;
+        }
+        body, h1, h2, p, a {
+            margin: 0 100px;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            text-decoration: none;
+        }
+        body {
+            background-color: black; /* Set the background color of the page to black */
+            display: flex;
+            flex-direction: column;
+            height: 100vh; /* Set body height to the full viewport height */
+            overflow: hidden; /* Hide overflow to prevent scrolling */
+        }
+        header, footer {
+            background-color: black; /* Header and footer background also black */
+            color: white;
+            padding: 2px 2px; /* Minimize padding to save space */
+            text-align: center; /* Center header and footer content */
+        }
+        main {
+            display: flex;
+            flex-direction: row;
+            overflow: hidden; /* Hide overflow inside main */
+        }   
+#left-section {
+    flex: 0 1 50%; /* Adjust the left section to 65% width */
+}      
+#left-section img {
+    width: 400%;
+    max-height: 13%; /* New height for the first two images */
+    margin: 5px 0;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+#left-section img:last-child {
+    width: 100%;
+    max-height: 50%; /* Increased height for the bottom image */
+    margin: 5px 20px 20px; /* Adjusting margin to center the image and add space at the bottom */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+#right-section {
+    flex: 100; /* Adjust this value as needed */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    border: 2px solid gold;
+    border-radius: 5px;
+    padding: 5px;
+}
+#right-section p {
+    width: 100%; /* Adjust as needed */
+    margin-left: auto; /* Centers the paragraph */
+    margin-right: auto; /* Keeps the paragraph centered */
+    font-weight: bold;
+    font-size: .8rem;
+    text-align: left;
+    color: #ffd700;
+}
+</style>
+</head>
+<body>
+    <header style="height: 15vh; display: flex; align-items: center; justify-content: center; background-color: #000000;">
+        <h1><img alt="Emelika Safaris" src="Emelika.safaris.web.png" style="height: 15vh; width: auto; margin-top: 20px;"/></h1>
+    </header>
+<style>
+.paragraph-box h3 {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FF4500; 
+    margin-bottom: 10px; /* Increased bottom margin for spacing */
+    text-align: center;
+    display: block; /* Changed from inline-block to block */
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content; /* Adjust the width to content */
+    font-size: 1.3em; /* Adjust font size as needed */
+}
+.paragraph-box {
+    text-align: center; /* Center aligns content of the box */
+    /* Rest of the .paragraph-box styles */
+}
+.paragraph-box p {
+    max-width: 100%; /* Adjusts the maximum width */
+    margin-left: 20%;
+    margin-right: auto;
+    text-align: justify; 
+</style>
+<main>
+<section id="left-section">
+<div style="display: flex; justify-content: space-around; width: 80%;"><img src="Emelika.about.1.jpg" style="width: 48%; border: 3px solid gold; height: 200px"/><img src="Emelika.about.2.jpg" style="width: 48%; border: 3px solid gold; height: 200px"/></div>
+<img src="Emelika.about.3.c.jpg" style="width: 80%; border: 3px solid #ffd700; height: 675px"/>
+</section>
+<section id="right-section" style="display: block;">
+    <div class="paragraph-box">
+        <h3>ABOUT US</h3>
+        <p>Emelika Safaris stands as a beacon of socially responsible tourism, offering an array of safari adventures that range from 
+        Wildlife tours and majestic Mt. Kilimanjaro treks to immersive Cultural tourism and relaxing getaways at the pristine Zanzibar 
+        Beach. We are committed to providing our clients with unique and memorable journeys, tailored to showcase the best of Tanzania’s 
+        natural beauty and cultural heritage.</p>
+    </div>
+    <div class="paragraph-box">
+        <h3>COMMUNITY COMMITMENT</h3>
+        <p>Recognizing our role as stewards of Tanzania's rich natural and cultural landscapes, we proudly allocate 10% of our profits to 
+        pivotal community projects, focused on Conservation and Education. Through this approach, we aim not only to be a tour company but 
+        a catalyst for meaningful change and progress in the communities we touch.</p>
+    </div>
+    <div class="paragraph-box">
+        <h3>EMPOWERING LOCAL BUSINESS</h3>
+        <p>Owned and operated by local guides who bring a lifetime of expertise and centuries of Tanzanian wisdom, we offer experiences that are 
+        deeply rooted in our cultural fabric. Our clients support not just a local small business, but also contribute to a larger movement of 
+        empowering local entities, nurturing a business ecosystem that uplifts and celebrates the Tanzanian spirit and its community values.</p>
+    </div>
+</section>
+</main>
+<footer style="display: flex; align-items: center; justify-content: center; background-color: black; color: #FF4500; padding: 20px 0;">
+<nav>
+<ul style="list-style: none; display: flex; justify-content: space-around; align-items: center; color: #FF4500; padding: 0; margin: 0; width: 100%;">
+    <li><a href="#" style="color: #FF4500; font-weight: bold; border: 2px solid gold; border-radius: 5px; padding: 5px; margin: 5px;">HOME</a></li>
+    <li><a href="#" style="color: #FF4500; font-weight: bold; border: 2px solid gold; border-radius: 5px; padding: 5px; margin: 5px;">TOURS</a></li>
+    <li><a href="#" style="color: #FF4500; font-weight: bold; border: 2px solid gold; border-radius: 5px; padding: 5px; margin: 5px;">CONTACT</a></li>       
+</ul>
+</nav>
+</footer>
+</body>
+</html>

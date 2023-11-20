@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours - Emelika Safaris</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+
+        body, h1, h2, p, a {
+            margin: 0 50px;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            text-decoration: none;
+            color: white;
+        }
+
+        body {
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+        background-color: black; /* Header background black */
+        padding: 2px 2px; /* Minimal padding */
+        text-align: center; /* Centered content */
+        position: fixed; /* Header stays fixed at the top */
+        top: 0; /* Align to the top of the page */
+        left: 0; /* Stretch across from the left */
+        right: 0; /* Stretch across to the right */
+        z-index: 100; /* Ensures it stays above other content */
+}
+
+
+        /* Footer Styles */
+        footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: #FF4500;
+        padding: 20px 0 10px 0;
+        position: fixed; /* Keep footer at the bottom */
+        bottom: 0; /* Align to bottom */
+        left: 0; /* Ensure it spans the entire width from the left */
+        right: 0; /* Ensure it spans the entire width to the right */
+        z-index: 100; /* Ensure it stays on top of other elements */
+}
+
+        footer nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+        footer nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+}
+
+        footer nav ul li {
+        padding: 0 1px; /* Adjust this value as needed for spacing */
+}
+
+        footer nav ul li a {
+        color: #FF4500;
+        font-weight: bold;
+        border: 2px solid gold;
+        border-radius: 5px;
+        padding: 5px;
+        text-decoration: none; /* Remove underline from links */
+        transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+        footer nav ul li a:hover {
+        color: gold; /* Change color on hover */
+        text-decoration: none; /* Ensure no underline on hover */
+}
+
+
+        .content {
+            flex-grow: 1;
+            padding-top: 100px;
+            padding-bottom: 60px;
+            margin: 0 50px;
+        }
+
+        .intro {
+            margin: 1px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            border: 2px solid gold;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .intro h2 {
+    font-size: 1.3em; 
+    font-weight: bold;
+    color: #FF4500; 
+    text-align: center; 
+    margin: 5px 0; 
+    
+}
+
+.secondary-navigation {
+    top: 0;
+    width: 75%;
+    max-width: 800; /* Max width - adjust as needed */
+    background-color: black
+    text-align: center;
+    z-index: 1000;
+    margin: 0 auto; /* Center the navigation bar */
+}
+
+.secondary-navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox */
+    justify-content: center;
+    flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+.secondary-navigation ul li {
+    margin-right: 0px; /* Minimal margin */
+}
+
+.secondary-navigation ul li a {
+    text-decoration: none;
+    color: #FF4500;
+    font-size: 1.2em; /* Slightly reduced font size */
+    padding: 2px;
+    border: 2px solid gold;
+    border-radius: 5px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 800px) {
+    .secondary-navigation ul li a {
+        font-size: 1em; /* Smaller font size for mobile */
+        padding: 2px; /* Smaller padding */
+    }
+}
+
+
+    .destination {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px;
+            gap: 20px;
+        }
+
+        .gallery {
+            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            border: 2px solid gold;
+            border-radius: 5px;
+        }
+
+        .description {
+            flex: 1;
+        }
+
+        @media (max-width: 768px) {
+            .destination {
+                flex-direction: column;
+            }
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.gallery img').forEach(function(img) {
+                img.addEventListener('click', function() {
+                    // Implement image expansion functionality
+                });
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <header style="height: 17vh; display: flex; align-items: center; justify-content: center; background-color: #000000;">
+        <h1><img alt="Emelika Safaris" src="Emelika.safaris.web.png" style="height: 15vh; width: auto; margin-top: 5px;"/></h1>
+    </header>
+
+<div class="content">
+        <div class="intro">
+            <h2>TOURS</h2>
+            <p> Embark on a journey of discovery in the heart of Tanzania, a land where wildlife roams free and landscapes unfold 
+                with awe-inspiring majesty. From the endless plains of the Serengeti, teeming with the Great Migration's thunderous 
+                herds, to the breathtaking Ngorongoro Crater and the mystical heights of Mount Kilimanjaro, Tanzania offers a tapestry 
+                of nature's wonders waiting to be explored. Our safaris provide an intimate glimpse into the untamed wilderness, where 
+                each day brings new adventures and the nights are filled with the sounds of the African bush. Whether you're a seasoned 
+                traveler or a first-time explorer, Tanzania's unique blend of vibrant cultures, rich history, and unparalleled natural 
+                beauty promises an unforgettable experience that will captivate your heart and ignite your spirit of adventure.</p>
+            <br>
+            <p> Tailored to your unique preferences and desires, our range of safari options in Tanzania caters to every type of adventurer. 
+                Whether you're seeking the luxury of exclusive lodges nestled in the wilderness, the charm of budget-friendly camps under 
+                starlit skies, or the thrill of guided walking safaris, we've meticulously designed experiences to suit every budget and style.
+                Our expert team ensures a seamless journey, from serene beach retreats on the Zanzibar coast to the adrenaline-pumping 
+                excitement of wildlife encounters. With us, your dream safari becomes a vivid reality, crafted with attention to detail 
+                and a deep understanding of this magnificent land. Below, we highlight some of Tanzania's most popular and highly requested 
+                destinations, each offering a unique window into the soul of Africa's wilderness. Contact us today to begin your Tanzanian 
+                safari adventure, and let us help you tailor the perfect experience to match your expectations. </p>
+            </div>
+            <nav class="secondary-navigation">
+                    <ul>
+                        <li><a href="#serengeti">SERENGETI</a></li>
+                        <li><a href="#ngorongoro">NGORONGORO</a></li>
+                        <li><a href="#manyara">MANYARA</a></li>
+                        <li><a href="#kilimanjaro">KILIMANJARO</a></li>
+                        <li><a href="#zanzibar">ZANZIBAR</a></li>
+                        <li><a href="#culture">CULTURE</a></li>
+                    </ul>
+                </nav>
+                
+        
+
+       <!-- Serengeti National Park Section -->
+    <div class="destination" id="serengeti">
+        <div class="gallery">
+        <!-- Placeholder images for Serengeti National Park -->
+        <img src="serengeti.1.jpg" alt="Serengeti Image 1">
+        <img src="serengeti.2.jpg" alt="Serengeti Image 2">
+        <img src="serengeti.3.jpg" alt="Serengeti Image 3">
+        <img src="serengeti.4.jpg" alt="Serengeti Image 4">
+        <img src="serengeti.5.jpg" alt="Serengeti Image 5">
+        <img src="serengeti.6.jpg" alt="Serengeti Image 6">
+        </div>
+        <div class="description">
+        <h2>Serengeti National Park</h2>
+        <p>Placeholder text for Serengeti National Park...</p>
+        </div>
+    </div>
+<!-- Ngorongoro Crater Section -->
+    <div class="destination" id="ngorongoro">
+        <div class="gallery">
+        <!-- Placeholder images for Ngorongoro Crater -->
+        <img src="placeholder1.jpg" alt="Ngorongoro Image 1">
+        <img src="placeholder2.jpg" alt="Ngorongoro Image 2">
+        <img src="placeholder3.jpg" alt="Ngorongoro Image 3">
+        <img src="placeholder4.jpg" alt="Ngorongoro Image 4">
+        <img src="placeholder5.jpg" alt="Ngorongoro Image 5">
+        <img src="placeholder6.jpg" alt="Ngorongoro Image 6">
+        </div>
+        <div class="description">
+        <h2>Ngorongoro Crater</h2>
+        <p>Placeholder text for Ngorongoro Crater...</p>
+        </div>
+    </div>
+<!-- Lake Manyara Section -->
+    <div class="destination" id="manyara">
+        <div class="gallery">
+        <!-- Placeholder images for Lake Manyara -->
+        <img src="placeholder1.jpg" alt="Manyara Image 1">
+        <img src="placeholder2.jpg" alt="Manyara Image 2">
+        <img src="placeholder3.jpg" alt="Manyara Image 3">
+        <img src="placeholder4.jpg" alt="Manyara Image 4">
+        <img src="placeholder5.jpg" alt="Manyara Image 5">
+        <img src="placeholder6.jpg" alt="Manyara Image 6">
+        </div>
+        <div class="description">
+        <h2>Lake Manyara</h2>
+        <p>Placeholder text for Lake Manyara...</p>
+        </div>
+    </div>
+<!-- Mount Kilimanjaro Section -->
+    <div class="destination" id="kilimanjaro">
+        <div class="gallery">
+        <!-- Placeholder images for Mount Kilimanjaro -->
+        <img src="placeholder1.jpg" alt="Kilimanjaro Image 1">
+        <img src="placeholder2.jpg" alt="Kilimanjaro Image 2">
+        <img src="placeholder3.jpg" alt="Kilimanjaro Image 3">
+        <img src="placeholder4.jpg" alt="Kilimanjaro Image 4">
+        <img src="placeholder5.jpg" alt="Kilimanjaro Image 5">
+        <img src="placeholder6.jpg" alt="Kilimanjaro Image 6">
+        </div>
+        <div class="description">
+        <h2>Mount Kilimanjaro</h2>
+        <p>Placeholder text for Mount Kilimanjaro...</p>
+        </div>
+    </div>
+<!-- Zanzibar Section -->
+    <div class="destination" id="zanzibar">
+        <div class="gallery">
+        <!-- Placeholder images for Zanzibar -->
+        <img src="placeholder1.jpg" alt="Zanzibar Image 1">
+        <img src="placeholder2.jpg" alt="Zanzibar Image 2">
+        <img src="placeholder3.jpg" alt="Zanzibar Image 3">
+        <img src="placeholder4.jpg" alt="Zanzibar Image 4">
+        <img src="placeholder5.jpg" alt="Zanzibar Image 5">
+        <img src="placeholder6.jpg" alt="Zanzibar Image 6">
+        </div>
+        <div class="description">
+        <h2>Zanzibar</h2>
+        <p>Placeholder text for Zanzibar...</p>
+        </div>
+    </div>
+<!-- Culture Section -->
+    <div class="destination" id="culture">
+        <div class="gallery">
+        <!-- Placeholder images for Culture -->
+        <img src="placeholder1.jpg" alt="Culture Image 1">
+        <img src="placeholder2.jpg" alt="Culture Image 2">
+        <img src="placeholder3.jpg" alt="Culture Image 3">
+        <img src="placeholder4.jpg" alt="Culture Image 4">
+        <img src="placeholder5.jpg" alt="Culture Image 5">
+        <img src="placeholder6.jpg" alt="Culture Image 6">
+        </div>
+        <div class="description">
+        <h2>Culture</h2>
+        <p>Placeholder text for Culture...</p>
+        </div>
+    </div>
+
+<footer style="display: flex; align-items: center; justify-content: center; background-color: black; color: #FF4500; padding: 20px 0;">
+    <nav>
+        <ul style="list-style: none; display: flex; justify-content: space-around; align-items: center; color: #FF4500; padding: 0; margin: 0; width: 100%;">
+            <li><a href="emelika_safaris_capture_page.html" style="color: #FF4500; font-weight: bold; border: 2px solid gold; border-radius: 5px; padding: 5px; margin: 5px;">HOME</a></li>
+            <li><a href="emelika_safaris_about.2.html" style="color: #FF4500; font-weight: bold; border: 2px solid gold; border-radius: 5px; padding: 5px; margin: 5px;">ABOUT</a></li>
+            <li><a href="contact.html" style="color: #FF4500; font-weight: bold; border: 2px solid gold; border-radius: 5px; padding: 5px; margin: 5px;">CONTACT</a></li>
+        </ul>
+    </nav>
+</footer>
+</body>
+</html>
+
