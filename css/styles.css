@@ -1,0 +1,61 @@
+/* Basic Reset */
+body {
+  margin: 0;
+  padding: 0;
+}
+body, h1, h2, p, a {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+}
+      
+h2 {
+  text-align: center;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #000000;
+}
+header h1 {
+  color: #ffffff;
+}
+header nav a {
+  margin-left: 20px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Main Content Styles */
+main {
+  height: calc(100vh - 6*40.0px);
+  background: url(../Emelika.safaris.image.1.jpg) no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#welcome-message {
+  border:  2px, solid #FFD700;
+  padding: 10px;          /* Some padding around the text */
+  margin: 20px;           /* Margin around the element */
+  text-align: center;     /* Centering the text */
+  font-size: 20px;        /* Larger font size */
+}
+
+
+footer {
+  height: 20.0px;
+  background-color: #000000;
+}
