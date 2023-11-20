@@ -7,6 +7,7 @@
 body {
   margin: 0;
   padding: 0;
+  color: #ffd700;
   background-color: #000000;
 }
 
@@ -89,14 +90,7 @@ footer .icon {
 .right-column {
   width: 100%;
   margin-left: 15px;
-  padding: 10px;
   height: 100%;
-}
-
-.right-column p {
-  color: #ffd700;
-  font-size: 0.8rem;
-  font-weight: bold;
 }
 
 .yellow-border {
@@ -119,9 +113,88 @@ footer .icon {
   width: 100%;
 }
 
-.paragraph-box h3 {
+.text-content-container {
+  padding: 10px;
+}
+
+.paragraph-box h2 {
   color: #ff4500;
   margin-bottom: 10px; /* Increased bottom margin for spacing */
   text-align: center;
-  font-size: 1.3em; /* Adjust font size as needed */
+}
+
+.secondary-navigation {
+  top: 0;
+  width: 75%;
+  max-width: 800;
+  background-color: black;
+  text-align: center;
+  z-index: 1000;
+  margin: 0 auto;
+}
+
+.secondary-navigation {
+  margin: 30px auto;
+}
+
+.secondary-navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+}
+
+.secondary-navigation ul li {
+  margin-right: 0px;
+}
+
+.secondary-navigation ul li a {
+  text-decoration: none;
+  color: #ff4500;
+  font-size: 1.2em;
+  padding: 6px;
+  border: 2px solid gold;
+  border-radius: 6px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 800px) {
+  .secondary-navigation ul li a {
+    font-size: 1em;
+    padding: 2px;
+  }
+}
+
+.destination {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  gap: 20px;
+}
+
+.gallery {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  border: 2px solid gold;
+  border-radius: 5px;
+}
+
+.description {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .destination {
+    flex-direction: column;
+  }
 }
