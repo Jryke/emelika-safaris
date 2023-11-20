@@ -198,3 +198,7 @@ footer .icon {
     flex-direction: column;
   }
 }
+
+.form-container {
+  padding: 10px;
+}
