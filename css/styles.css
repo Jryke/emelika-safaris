@@ -1,31 +1,16 @@
 /* Basic Reset */
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
 body {
   margin: 0;
   padding: 0;
   background-color: #000000;
 }
-body,
-h1,
-h2,
-p,
-a {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  text-decoration: none;
-}
 
-h2 {
-  text-align: center;
-}
-
-/* Header Styles */
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
+/* Header/Nav Styles */
 header {
   display: flex;
   justify-content: center;
@@ -40,6 +25,33 @@ header img {
 }
 
 /* Main Content Styles */
+main {
+  padding: 30px;
+}
+
+/* Footer Styles */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 40px;
+}
+
+footer a {
+  padding: 10px 20px;
+  border: 2px solid #ffd700;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
+footer .icon {
+  height: 60px;
+  width: auto;
+}
+
+/* Homepage Banner styles */
 .banner {
   height: 600px;
   background: url(../images/Emelika.safaris.image.1.jpg) no-repeat center
@@ -58,23 +70,58 @@ header img {
   font-size: 20px; /* Larger font size */
 }
 
-footer {
+/* Page Styles */
+.flex-row-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px 40px;
+  flex-direction: row;
+  max-width: 100%;
 }
 
-footer a {
-  padding: 10px 20px;
-  border: 2px solid #ffd700;
-  color: #ffffff;
-  text-transform: uppercase;
-  border-radius: 15%;
-  margin: 0 10px;
+.flex-column {
+  flex: 0 1 50%;
 }
 
-footer .icon {
-  height: 60px;
-  width: auto;
+.left-column {
+  width: 100%;
+  margin-right: 15px;
+}
+
+.right-column {
+  width: 100%;
+  margin-left: 15px;
+  padding: 10px;
+  height: 100%;
+}
+
+.right-column p {
+  color: #ffd700;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.yellow-border {
+  border: 3px solid gold;
+  border-radius: 10px;
+}
+
+.img-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.image-half-width {
+  width: 48%;
+  height: 200px;
+}
+
+.image-full-width {
+  width: 100%;
+}
+
+.paragraph-box h3 {
+  color: #ff4500;
+  margin-bottom: 10px; /* Increased bottom margin for spacing */
+  text-align: center;
+  font-size: 1.3em; /* Adjust font size as needed */
 }
